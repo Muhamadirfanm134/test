@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Rambla|Staatliches&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-black: #af3737;
+    --color-white: #ffffff;
+    --color-border: #ffffff34;
+    --font-staat: 'Staatliches', cursive;
+    --font-os:  'Oswald', sans-serif;
+    --font-ram: 'Rambla', sans-serif;
+}
+
+/* global classes */
+.font-staat{
+    font: normal 400 18px var(--font-staat);
+}
+.font-os{
+    font: normal 300 18px var(--font-os);
+}
+.font-ram{
+    font: normal bold 18px var(--font-ram);
+}
+
+.font-size-40{
+    font-size: 40px;
+}
+.font-size-34{
+    font-size: 34px;
+}
+.font-size-27{
+    font-size: 27px;
+}
+.font-size-20{
+    font-size: 20px;
+}
+.font-size-16{
+    font-size: 16px;
+}
+
+.bgcolor-black{
+    background-color: var(--color-black);
+}
+
+/* #global classes */
+
+/* #header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:1;
+    transition: left .5s ease;
+}
+
+#header nav{
+    height: 100vh;
+}
+#header .site-title .navbar-brand{
+    letter-spacing: 2px;
+    color: var(--color-white);
+}
+
+#header .nav-link{
+    margin: .7rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+    text-transform: uppercase;
+}
+
+#header .nav-link:hover{
+    color: var(--color-white) !important;
+}
+
+#header .toggle-button{
+    background: none;
+    color: var(--color-black);
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    border: 1px solid var(--color-border);
+}
+
+.toggle-left{
+    left: 0 !important;
+    width: 1000px !important;
+} */
+
+/* site-main */
+
+.navbar{
+    background-color: #ffffff7e;
+}
+
+h5 {
+    color: #006064;
+}
+
+.img-fluid{
+    width: auto;
+    height: auto;
+}
+
+img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.site-banner .banner-area{
+    background: url(./assets/Banner_image.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.site-banner .banner-area .author{
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.site-banner .banner-area .author .author-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: auto;
+    background: url(./assets/about.jpg) no-repeat;
+    background-size: 100%;
+    background-position: 50% 20%;
+}
+
+a.btn{
+    text-decoration: none;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 27px;
+    margin-top: 15px;
+}
+
+button.btn{
+    text-decoration: none;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 27px;
+    margin-top: 15px;
+}
+
+.banner-carve{
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    bottom: 0;
+    background: url(./assets/wave-d.png) 100% 100% no-repeat;
+    background-size: contain;
+}
+
+.banner-carve1{
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: url(./assets/wave-d.png) 100% 100% no-repeat;
+    background-size: contain;
+}
+
+.container{
+    max-width: auto;
+    margin: 0 auto;
+    background:#ffffff44;
+    padding: 25px;
+}
+
+.parallax{
+    background: url(./assets/Banner_image.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+}
+
+.skill .bars p, .site-content .skill .bars span{
+    line-height: 10px;
+}
+
+#footer form .row .col input[type="text"],
+#footer form .row .col input[type="email"],
+#footer form textarea{
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid gray;
+    padding: 1.5rem 1rem;
+}
+
+  
+  .progress {
+    background: rgba(255,255,255,0.1);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    padding: 0 5px;
+    display: flex;
+    height: 40px;
+    width: 500px;
+  }
+  
+  .progress-value {
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #2196F3;
+    height: 30px;
+    width: 0;
+  }
+  
+  @keyframes load {
+    0% { width: 0; }
+    100% { width: 68%; }
+  }
+
+@media screen and (min-width: 768px){
+    .toggle-button{
+        display: none;
+    }
+    #header{
+        z-index:0;
+    }
+}
+
+/* #site-main */
